@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "display": {
     "thirdperson_righthand": {
       "scale": [0.25, 0.25, 0.25]
