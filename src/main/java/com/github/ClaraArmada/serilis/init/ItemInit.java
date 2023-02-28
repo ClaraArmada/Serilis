@@ -25,9 +25,9 @@ public class ItemInit {
     public static final RegistryObject<Item> FLINT_KNIFE = ITEMS.register("flint_knife",
             () -> new FlintKnife(ItemTiers.FLINT, 3, -2.5F, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_AXE_HEAD = ITEMS.register("flint_axe_head",
-            () -> new AxeItem(ItemTiers.FLINT, 2, -3.5F, new Item.Properties()));
+            () -> new AxeItem(ItemTiers.FLINT, 1.0F, -3.5F, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_AXE = ITEMS.register("flint_axe",
-            () -> new AxeItem(ItemTiers.FLINT, 2, -3.5F, new Item.Properties()));
+            () -> new AxeItem(ItemTiers.FLINT, 1.0F, -3.5F, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_ARROWHEAD = ITEMS.register("flint_arrowhead",
             () -> new FlintKnife(ItemTiers.FLINT, 0, -2.5F, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_SPEAR = ITEMS.register("flint_spear",

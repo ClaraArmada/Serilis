@@ -7,7 +7,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum ItemTiers implements Tier {
-    FLINT(0, 12, 0.2F, 0.0F, 0, () -> {
+    FLINT(0, 12, 3.5F, 0.0F, 0, () -> {
         return Ingredient.of(Items.FLINT);
     });
 
