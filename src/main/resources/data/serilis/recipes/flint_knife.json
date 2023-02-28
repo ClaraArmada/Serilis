@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "serilis:flint_knife_head"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    },
+    "/": {
+      "item": "serilis:twine"
+    }
+  },
+  "pattern": [
+    "#/",
+    "X "
+  ],
+  "result": {
+    "item": "serilis:flint_knife"
+  }
+}

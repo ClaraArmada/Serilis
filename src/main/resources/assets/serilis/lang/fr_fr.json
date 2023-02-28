@@ -1,0 +1,18 @@
+{
+  "item.serilis.oak_plank": "Planche de Boi",
+  "item.serilis.spruce_plank": "Еловая доска",
+  "item.serilis.birch_plank": "Берёзовая доска",
+  "item.serilis.jungle_plank": "Доска из тропического дерева",
+  "item.serilis.acacia_plank": "Акациевая доска",
+  "item.serilis.dark_oak_plank": "Доска из тёмного дуба",
+  "item.serilis.mangrove_plank": "Мангровая доска",
+  "item.serilis.crimson_plank": "Багровая доска",
+  "item.serilis.warped_plank": "Искаженная доска",
+  "item.serilis.plant_fiber": "Травяное волокно",
+  "item.serilis.flint_flake": "Кремневый отщеп",
+  "item.serilis.twine": "бечёвка",
+  "item.serilis.flint_knife_head": "бечёвка",
+
+
+  "item.serilis.flint_flake.tooltip": "Кремневый отщеп"
+}

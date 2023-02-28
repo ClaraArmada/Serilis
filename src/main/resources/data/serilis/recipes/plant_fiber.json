@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "serilis:plant_fiber"
+    },
+    {
+      "item": "serilis:plant_fiber"
+    },
+    {
+      "item": "serilis:plant_fiber"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "serilis:twine"
+  }
+}

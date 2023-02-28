@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [0.35, 0.35, 0.35]
+    },
+    "thirdperson_lefthand": {
+      "scale": [0.35, 0.35, 0.35]
+    }
+  },
+  "textures": {
+    "layer0": "serilis:item/flint_knife"
+  }
+}

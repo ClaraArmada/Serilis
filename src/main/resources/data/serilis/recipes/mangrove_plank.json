@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "serilis:mangrove_plank"
+    }
+  },
+  "result": {
+    "item": "minecraft:mangrove_planks"
+  }
+}
