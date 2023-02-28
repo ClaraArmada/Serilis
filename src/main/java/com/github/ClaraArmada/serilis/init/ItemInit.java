@@ -1,7 +1,6 @@
 package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
-import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
 import com.github.ClaraArmada.serilis.world.item.FlintKnife;
 import com.github.ClaraArmada.serilis.world.item.ItemTiers;
 import com.github.ClaraArmada.serilis.world.item.SpearItem;
@@ -33,23 +32,23 @@ public class ItemInit {
             () -> new FlintKnife(ItemTiers.FLINT, 0, -2.5F, new Item.Properties()));
     public static final RegistryObject<Item> FLINT_SPEAR = ITEMS.register("flint_spear",
             () -> new SpearItem((new Item.Properties()).durability(65)));
-    public static final RegistryObject<Item> OAK_PLANK = ITEMS.register("oak_plank",
+    public static final RegistryObject<Item> OAK_BOARD = ITEMS.register("oak_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SPRUCE_PLANK = ITEMS.register("spruce_plank",
+    public static final RegistryObject<Item> SPRUCE_BOARD = ITEMS.register("spruce_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BIRCH_PLANK = ITEMS.register("birch_plank",
+    public static final RegistryObject<Item> BIRCH_BOARD = ITEMS.register("birch_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> JUNGLE_PLANK = ITEMS.register("jungle_plank",
+    public static final RegistryObject<Item> JUNGLE_BOARD = ITEMS.register("jungle_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ACACIA_PLANK = ITEMS.register("acacia_plank",
+    public static final RegistryObject<Item> ACACIA_BOARD = ITEMS.register("acacia_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DARK_OAK_PLANK = ITEMS.register("dark_oak_plank",
+    public static final RegistryObject<Item> DARK_BOARD = ITEMS.register("dark_oak_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MANGROVE_PLANK = ITEMS.register("mangrove_plank",
+    public static final RegistryObject<Item> MANGROVE_BOARD = ITEMS.register("mangrove_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CRIMSON_PLANK = ITEMS.register("crimson_plank",
+    public static final RegistryObject<Item> CRIMSON_BOARD = ITEMS.register("crimson_board",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> WARPED_PLANK = ITEMS.register("warped_plank",
+    public static final RegistryObject<Item> WARPED_BOARD = ITEMS.register("warped_board",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PLANT_FIBER = ITEMS.register("plant_fiber",
             () -> new Item(new Item.Properties()));

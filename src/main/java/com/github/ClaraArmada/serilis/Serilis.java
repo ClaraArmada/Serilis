@@ -46,15 +46,15 @@ public class Serilis {
     private void addcreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemInit.RAW_CHALCOPYRITE);
-            event.accept(ItemInit.OAK_PLANK);
-            event.accept(ItemInit.SPRUCE_PLANK);
-            event.accept(ItemInit.BIRCH_PLANK);
-            event.accept(ItemInit.JUNGLE_PLANK);
-            event.accept(ItemInit.ACACIA_PLANK);
-            event.accept(ItemInit.DARK_OAK_PLANK);
-            event.accept(ItemInit.MANGROVE_PLANK);
-            event.accept(ItemInit.CRIMSON_PLANK);
-            event.accept(ItemInit.WARPED_PLANK);
+            event.accept(ItemInit.OAK_BOARD);
+            event.accept(ItemInit.SPRUCE_BOARD);
+            event.accept(ItemInit.BIRCH_BOARD);
+            event.accept(ItemInit.JUNGLE_BOARD);
+            event.accept(ItemInit.ACACIA_BOARD);
+            event.accept(ItemInit.DARK_BOARD);
+            event.accept(ItemInit.MANGROVE_BOARD);
+            event.accept(ItemInit.CRIMSON_BOARD);
+            event.accept(ItemInit.WARPED_BOARD);
             event.accept(ItemInit.PLANT_FIBER);
             event.accept(ItemInit.TWINE);
         }
