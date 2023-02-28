@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.world.item;
+package com.github.ClaraArmada.serilis.world.items;
 
 import com.github.ClaraArmada.serilis.world.entity.projectile.ThrownFlintSpear;
 import com.google.common.collect.ImmutableMultimap;
@@ -21,7 +21,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.Vanishable;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 

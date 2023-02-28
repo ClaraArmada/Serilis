@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.world.item;
+package com.github.ClaraArmada.serilis.world.items;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;

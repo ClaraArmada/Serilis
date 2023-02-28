@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.world.item;
+package com.github.ClaraArmada.serilis.world.items;
 
 import java.util.function.Supplier;
 import net.minecraft.util.LazyLoadedValue;

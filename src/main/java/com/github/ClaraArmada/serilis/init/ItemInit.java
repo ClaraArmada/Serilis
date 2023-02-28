@@ -1,10 +1,10 @@
 package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
-import com.github.ClaraArmada.serilis.world.item.FlintKnife;
-import com.github.ClaraArmada.serilis.world.item.ItemTiers;
-import com.github.ClaraArmada.serilis.world.item.SpearItem;
-import com.github.ClaraArmada.serilis.world.item.metaltooltip;
+import com.github.ClaraArmada.serilis.world.items.FlintKnife;
+import com.github.ClaraArmada.serilis.world.items.ItemTiers;
+import com.github.ClaraArmada.serilis.world.items.SpearItem;
+import com.github.ClaraArmada.serilis.world.items.metaltooltip;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
