@@ -2,10 +2,14 @@ package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.world.blocks.RockModel;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -22,7 +26,7 @@ public class BlockInit {
 
     //Blocks
     public static final RegistryObject<Block> CHALCOPYRITE_ORE = registerBlock("chalcopyrite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3.0F, 3.0F), UniformInt.of(2, 4)));
 
     public static final RegistryObject<Block> ROCK = registerBlock("rock",
             () -> new RockModel(BlockBehaviour.Properties.of(Material.STONE)
