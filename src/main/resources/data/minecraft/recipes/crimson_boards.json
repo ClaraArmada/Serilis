@@ -3,11 +3,11 @@
   "group": "plank",
   "ingredients": [
     {
-      "tag": "minecraft:acacia_logs"
+      "tag": "minecraft:crimson_logs"
     }
   ],
   "result": {
     "count": 3,
-    "item": "serilis:acacia_plank"
+    "item": "serilis:crimson_board"
   }
 }

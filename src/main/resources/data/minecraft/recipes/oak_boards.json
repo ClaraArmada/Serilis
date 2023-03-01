@@ -3,11 +3,11 @@
   "group": "plank",
   "ingredients": [
     {
-      "tag": "minecraft:crimson_logs"
+      "tag": "minecraft:oak_logs"
     }
   ],
   "result": {
     "count": 3,
-    "item": "serilis:crimson_plank"
+    "item": "serilis:oak_board"
   }
 }

@@ -3,11 +3,11 @@
   "group": "plank",
   "ingredients": [
     {
-      "tag": "minecraft:mangrove_logs"
+      "tag": "minecraft:dark_oak_logs"
     }
   ],
   "result": {
     "count": 3,
-    "item": "serilis:mangrove_plank"
+    "item": "serilis:dark_oak_board"
   }
 }
