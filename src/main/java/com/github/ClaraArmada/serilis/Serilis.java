@@ -71,6 +71,15 @@ public class Serilis {
         }
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(BlockInit.CHALCOPYRITE_ORE);
+            event.accept(BlockInit.LOAM);
+            event.accept(BlockInit.SILT);
+            event.accept(BlockInit.SANDY_CLAY);
+            event.accept(BlockInit.SANDY_CLAY_LOAM);
+            event.accept(BlockInit.SILT_LOAM);
+            event.accept(BlockInit.SANDY_LOAM);
+            event.accept(BlockInit.SILTY_CLAY);
+            event.accept(BlockInit.SILTY_CLAY_LOAM);
+            event.accept(BlockInit.CLAY_LOAM);
         }
     }
 

@@ -20,6 +20,15 @@
   "item.serilis.raw_chalcopyrite": "Raw Chalcopyrite",
   "block.serilis.chalcopyrite_ore": "Chalcopyrite Ore",
   "block.serilis.rock": "Rock",
+  "block.serilis.loam": "Loam",
+  "block.serilis.silt": "Silt",
+  "block.serilis.sandy_clay": "Sandy Clay",
+  "block.serilis.sandy_clay_loam": "Sandy Clay Loam",
+  "block.serilis.sandy_loam": "Sandy Loam",
+  "block.serilis.silt_loam": "Silt Loam",
+  "block.serilis.silty_clay": "Silty Clay",
+  "block.serilis.silty_clay_loam": "Silty Clay Loam",
+  "block.serilis.clay_loam": "Clay Loam",
 
   "item.serilis.atomicsymbol.copper_iron_sulfide": "CuFeS₂",
 
