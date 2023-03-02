@@ -71,6 +71,8 @@ public class Serilis {
         }
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(BlockInit.CHALCOPYRITE_ORE);
+            event.accept(BlockInit.ROCK);
+            event.accept(BlockInit.SANDSTONE_ROCK);
             event.accept(BlockInit.LOAM);
             event.accept(BlockInit.SILT);
             event.accept(BlockInit.SANDY_CLAY);

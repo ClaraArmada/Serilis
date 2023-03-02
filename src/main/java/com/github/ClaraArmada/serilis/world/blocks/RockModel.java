@@ -1,16 +1,33 @@
 package com.github.ClaraArmada.serilis.world.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
 
 public class RockModel extends Block {
+    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     private static final VoxelShape SHAPE = makeShape();
+
+    public static VoxelShape makeShape(){
+        VoxelShape shape = Shapes.empty();
+        shape = Shapes.join(shape, Shapes.box(0.25, 0, 0.1875, 0.8125, 0.1875, 0.8125), BooleanOp.OR);
+
+        return shape;
+    }
+
     public RockModel(Properties properties) {
         super(properties);
     }
@@ -20,12 +37,24 @@ public class RockModel extends Block {
         return SHAPE;
     }
 
-    public static VoxelShape makeShape(){
-        VoxelShape shape = Shapes.empty();
-        shape = Shapes.join(shape, Shapes.box(0.375, 0, 0.1875, 0.6875, 0.1875, 0.625), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.24999999999999994, 0, 0.5, 0.5, 0.125, 0.775), BooleanOp.OR);
-        shape = Shapes.join(shape, Shapes.box(0.25, 0, 0.1875, 0.8125, 0.1875, 0.8125), BooleanOp.OR);
+    @Nullable
+    @Override
+    public BlockState getStateForPlacement(BlockPlaceContext pcontext) {
+        return this.defaultBlockState().setValue(FACING, pcontext.getHorizontalDirection().getOpposite());
+    }
 
-        return shape;
+    @Override
+    public BlockState rotate(BlockState state, LevelAccessor level, BlockPos pos, Rotation direction) {
+        return state.setValue(FACING, direction.rotate(state.getValue(FACING)));
+    }
+
+    @Override
+    public BlockState mirror(BlockState pState, Mirror pMirror) {
+        return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
+        pBuilder.add(FACING);
     }
 }

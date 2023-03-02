@@ -49,6 +49,9 @@ public class BlockInit {
     public static final RegistryObject<Block> ROCK = registerBlock("rock",
             () -> new RockModel(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> SANDSTONE_ROCK = registerBlock("sandstone_rock",
+            () -> new RockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

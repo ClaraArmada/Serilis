@@ -1,5 +1,8 @@
 {
   "variants": {
-    "": { "model": "serilis:block/rock" }
+    "facing=north": { "model": "serilis:block/rock" },
+    "facing=east": { "model": "serilis:block/rock", "y": 90 },
+    "facing=south": { "model": "serilis:block/rock", "y": 180 },
+    "facing=west": { "model": "serilis:block/rock", "y": 270 }
   }
 }
