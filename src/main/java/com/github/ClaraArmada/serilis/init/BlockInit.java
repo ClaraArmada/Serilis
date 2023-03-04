@@ -1,6 +1,7 @@
 package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
+import com.github.ClaraArmada.serilis.world.blocks.LargeRockModel;
 import com.github.ClaraArmada.serilis.world.blocks.RockModel;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -51,6 +52,18 @@ public class BlockInit {
                     .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
     public static final RegistryObject<Block> SANDSTONE_ROCK = registerBlock("sandstone_rock",
             () -> new RockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> LARGE_ROCK = registerBlock("large_rock",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> LARGE_SANDSTONE_ROCK = registerBlock("large_sandstone_rock",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> SMALL_ROCK = registerBlock("small_rock",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> SMALL_SANDSTONE_ROCK = registerBlock("small_sandstone_rock",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -8,18 +8,29 @@
   "item.serilis.mangrove_board": "Mangrove Board",
   "item.serilis.crimson_board": "Crimson Board",
   "item.serilis.warped_board": "Warped Board",
+
   "item.serilis.plant_fiber": "Plant Fiber",
+  "item.serilis.twine": "Twine",
+
   "item.serilis.flint_flake": "Flint Flake",
   "item.serilis.flint_spear": "Flint Spear",
-  "item.serilis.twine": "Twine",
   "item.serilis.flint_knife_head": "Flint Knife Head",
   "item.serilis.flint_knife": "Flint Knife",
   "item.serilis.flint_axe_head": "Flint Axe Head",
   "item.serilis.flint_axe": "Flint Axe",
   "item.serilis.flint_arrowhead": "Flint Arrowhead",
+  "item.serilis.flint_flake.tooltip": "Flint Flake",
+
   "item.serilis.raw_chalcopyrite": "Raw Chalcopyrite",
   "block.serilis.chalcopyrite_ore": "Chalcopyrite Ore",
+
   "block.serilis.rock": "Rock",
+  "block.serilis.sandstone_rock": "Sandstone Rock",
+  "block.serilis.large_rock": "Large Rock",
+  "block.serilis.large_sandstone_rock": "Large Sandstone Rock",
+  "block.serilis.small_rock": "Small Rock",
+  "block.serilis.small_sandstone_rock": "Small Sandstone Rock",
+
   "block.serilis.loam": "Loam",
   "block.serilis.silt": "Silt",
   "block.serilis.sandy_clay": "Sandy Clay",
@@ -31,9 +42,6 @@
   "block.serilis.clay_loam": "Clay Loam",
 
   "item.serilis.atomicsymbol.copper_iron_sulfide": "CuFeS₂",
-
-
-  "item.serilis.flint_flake.tooltip": "Flint Flake",
 
   "block.minecraft.copper_ore": "Native Copper Ore",
   "block.minecraft.deepslate_copper_ore": "Deepslate Native Copper Ore",
