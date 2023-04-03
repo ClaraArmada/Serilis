@@ -66,6 +66,10 @@ public class BlockInit {
             () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(0.5f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
 
+    public static final RegistryObject<Block> CLAY_PIPE_BLOCK = registerBlock("clay_pipe_block",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.CLAY)
+                    .strength(0.6f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

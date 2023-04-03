@@ -2,6 +2,7 @@ package com.github.ClaraArmada.serilis.world.entity.projectile;
 
 import com.github.ClaraArmada.serilis.init.ItemInit;
 import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
+import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -10,6 +11,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -99,7 +101,7 @@ public class ThrownFlintSpear extends AbstractArrow {
         float f = 8.0F;
 
         Entity entity1 = this.getOwner();
-        DamageSource damagesource = DamageSource.trident(this, (Entity)(entity1 == null ? this : entity1));
+        DamageSource damagesource = this.damageSources().trident(this, (Entity)(entity1 == null ? this : entity1));
         this.dealtDamage = true;
         SoundEvent soundevent = SoundEvents.TRIDENT_HIT;
         if (entity.hurt(damagesource, f)) {
@@ -138,8 +140,8 @@ public class ThrownFlintSpear extends AbstractArrow {
 
     public void readAdditionalSaveData(CompoundTag tag) {
         super.readAdditionalSaveData(tag);
-        if (tag.contains("Trident", 10)) {
-            this.referenceItem = ItemStack.of(tag.getCompound("Trident")).getItem();
+        if (tag.contains("Spear", 10)) {
+            this.referenceItem = ItemStack.of(tag.getCompound("Spear")).getItem();
         }
 
         this.dealtDamage = tag.getBoolean("DealtDamage");
