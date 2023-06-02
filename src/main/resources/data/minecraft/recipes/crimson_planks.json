@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "serilis:jungle_plank"
+      "item": "serilis:crimson_plank"
     }
   },
   "result": {
-    "item": "minecraft:jungle_planks"
+    "item": "minecraft:crimson_planks"
   }
 }

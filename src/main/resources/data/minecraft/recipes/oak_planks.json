@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "serilis:birch_plank"
+      "item": "serilis:oak_plank"
     }
   },
   "result": {
-    "item": "minecraft:birch_planks"
+    "item": "minecraft:oak_planks"
   }
 }

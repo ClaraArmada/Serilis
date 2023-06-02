@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###"
+    "##",
+    "##"
   ],
   "key": {
     "#": {
-      "item": "serilis:acacia_plank"
+      "item": "serilis:mangrove_plank"
     }
   },
   "result": {
-    "item": "minecraft:acacia_planks"
+    "item": "minecraft:mangrove_planks"
   }
 }
