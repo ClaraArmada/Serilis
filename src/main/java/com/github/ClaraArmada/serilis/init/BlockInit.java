@@ -3,14 +3,18 @@ package com.github.ClaraArmada.serilis.init;
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.world.blocks.LargeRockModel;
 import com.github.ClaraArmada.serilis.world.blocks.RockModel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -70,6 +74,15 @@ public class BlockInit {
             () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.CLAY)
                     .strength(0.6f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
 
+    public static final RegistryObject<Block> BACKROOMS_WALL1 = registerBlock("backrooms_wall1",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
+
+    public static final RegistryObject<Block> BACKROOMS_WALL2 = registerBlock("backrooms_wall2",
+            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -80,6 +93,15 @@ public class BlockInit {
         return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties()));
     }
+
+    private static Boolean never(BlockState state, BlockGetter getter, BlockPos pos, EntityType<?> entityType) {
+        return (boolean)false;
+    }
+
+    private static boolean never(BlockState state, BlockGetter getter, BlockPos pos) {
+        return false;
+    }
+
 
     public static  void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
