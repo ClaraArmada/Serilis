@@ -3,7 +3,7 @@ package com.github.ClaraArmada.serilis;
 import com.github.ClaraArmada.serilis.init.ItemInit;
 import com.github.ClaraArmada.serilis.init.BlockInit;
 import com.github.ClaraArmada.serilis.events.loot.ModLootModifiers;
-import com.github.ClaraArmada.serilis.world.CreativeModeTabs.ModCreativeModeTabs;
+import com.github.ClaraArmada.serilis.client.ModCreativeModeTabs;
 import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -89,7 +89,7 @@ public class Serilis {
             event.accept(BlockInit.CLAY_LOAM);
         }
 
-        if(event.getTab() == ModCreativeModeTabs.BACKROOMS_TAB) {
+        if(event.getTab() == ModCreativeModeTabs.LIMINAL_SPACE_TAB) {
             event.accept(BlockInit.BACKROOMS_WALL1);
             event.accept(BlockInit.BACKROOMS_WALL2);
         }

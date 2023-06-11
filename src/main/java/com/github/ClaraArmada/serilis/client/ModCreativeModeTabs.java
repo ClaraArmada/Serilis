@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.world.CreativeModeTabs;
+package com.github.ClaraArmada.serilis.client;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.init.BlockInit;
@@ -12,12 +12,12 @@ import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = Serilis.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
-    public static CreativeModeTab BACKROOMS_TAB;
+    public static CreativeModeTab LIMINAL_SPACE_TAB;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event) {
-        BACKROOMS_TAB = event.registerCreativeModeTab(new ResourceLocation(Serilis.MODID, "backrooms_tab"),
+        LIMINAL_SPACE_TAB = event.registerCreativeModeTab(new ResourceLocation(Serilis.MODID, "liminal_space_tab"),
             builder -> builder.icon(() -> new ItemStack(BlockInit.BACKROOMS_WALL1.get()))
-                    .title(Component.translatable("creativemodetab.backrooms_tab")));
+                    .title(Component.translatable("creativemodetab.liminal_space_tab")));
     }
 }

@@ -49,6 +49,13 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
     public static final RegistryObject<Block> SILTY_CLAY_LOAM = registerBlock("silty_clay_loam",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+    public static final RegistryObject<Block> BACKROOMS_WALL1 = registerBlock("backrooms_wall1",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
+    public static final RegistryObject<Block> BACKROOMS_WALL2 = registerBlock("backrooms_wall2",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
+
 
 
     public static final RegistryObject<Block> ROCK = registerBlock("rock",
@@ -73,14 +80,6 @@ public class BlockInit {
     public static final RegistryObject<Block> CLAY_PIPE_BLOCK = registerBlock("clay_pipe_block",
             () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.CLAY)
                     .strength(0.6f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
-
-    public static final RegistryObject<Block> BACKROOMS_WALL1 = registerBlock("backrooms_wall1",
-            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
-
-    public static final RegistryObject<Block> BACKROOMS_WALL2 = registerBlock("backrooms_wall2",
-            () -> new LargeRockModel(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

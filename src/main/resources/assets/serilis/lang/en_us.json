@@ -40,11 +40,15 @@
   "block.serilis.silty_clay": "Silty Clay",
   "block.serilis.silty_clay_loam": "Silty Clay Loam",
   "block.serilis.clay_loam": "Clay Loam",
+  "block.serilis.backrooms_wall1": "Backrooms Wall 1",
+  "block.serilis.backrooms_wall2": "Backrooms Wall 2",
 
   "item.serilis.atomicsymbol.copper_iron_sulfide": "CuFeS₂",
 
   "block.minecraft.copper_ore": "Native Copper Ore",
   "block.minecraft.deepslate_copper_ore": "Deepslate Native Copper Ore",
   "item.minecraft.raw_copper": "Raw Native Copper",
-  "block.minecraft.raw_copper_block": "Block of Raw Native Copper"
+  "block.minecraft.raw_copper_block": "Block of Raw Native Copper",
+
+  "creativemodetab.liminal_space_tab": "Liminal Spaces"
 }
