@@ -28,6 +28,6 @@ A world to fight and adapt to, flint tools, engineering, machines, vehicles, clo
 [[dependencies.serilis]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.3,1.20)"
+    versionRange="[1.19.3,1.21)"
     ordering="NONE"
     side="BOTH"

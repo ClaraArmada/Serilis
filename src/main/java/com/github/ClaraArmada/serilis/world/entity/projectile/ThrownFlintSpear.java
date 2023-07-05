@@ -2,7 +2,6 @@ package com.github.ClaraArmada.serilis.world.entity.projectile;
 
 import com.github.ClaraArmada.serilis.init.ItemInit;
 import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
-import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -11,7 +10,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -56,7 +54,7 @@ public class ThrownFlintSpear extends AbstractArrow {
         int i = this.entityData.get(ID_LOYALTY);
         if (i > 0 && (this.dealtDamage || this.isNoPhysics()) && entity != null) {
             if (!this.isAcceptableReturnOwner()) {
-                if (!this.level.isClientSide && this.pickup == AbstractArrow.Pickup.ALLOWED) {
+                if (!this.level().isClientSide && this.pickup == AbstractArrow.Pickup.ALLOWED) {
                     this.spawnAtLocation(this.getPickupItem(), 0.1F);
                 }
 
@@ -65,7 +63,7 @@ public class ThrownFlintSpear extends AbstractArrow {
                 this.setNoPhysics(true);
                 Vec3 vec3 = entity.getEyePosition().subtract(this.position());
                 this.setPosRaw(this.getX(), this.getY() + vec3.y * 0.015D * (double)i, this.getZ());
-                if (this.level.isClientSide) {
+                if (this.level().isClientSide) {
                     this.yOld = this.getY();
                 }
 
@@ -114,7 +112,7 @@ public class ThrownFlintSpear extends AbstractArrow {
 
                 this.doPostHurtEffects(livingentity1);
 
-                if (!this.level.isClientSide && entity instanceof LivingEntity) {
+                if (!this.level().isClientSide && entity instanceof LivingEntity) {
                     ((LivingEntity)entity).startRiding(this);
                 }
             }

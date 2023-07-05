@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.events.loot;
+package com.github.ClaraArmada.serilis.common.events.loot;
 
 import com.google.common.base.Suppliers;
 import com.mojang.serialization.Codec;

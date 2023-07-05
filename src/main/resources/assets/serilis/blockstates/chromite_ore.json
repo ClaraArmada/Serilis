@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "serilis:block/chromite_ore" }
+  }
+}

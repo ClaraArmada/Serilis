@@ -1,15 +1,15 @@
 package com.github.ClaraArmada.serilis;
 
-import com.github.ClaraArmada.serilis.init.ItemInit;
+import com.github.ClaraArmada.serilis.common.events.loot.ModLootModifiers;
 import com.github.ClaraArmada.serilis.init.BlockInit;
-import com.github.ClaraArmada.serilis.events.loot.ModLootModifiers;
-import com.github.ClaraArmada.serilis.client.ModCreativeModeTabs;
+import com.github.ClaraArmada.serilis.init.ItemInit;
+import com.github.ClaraArmada.serilis.init.ModCreativeModeTabs;
 import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +25,8 @@ public class Serilis {
     private static final Logger LOGGER = LogUtils.getLogger();
     public Serilis() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ItemInit.register(modEventBus);
 
@@ -44,8 +46,8 @@ public class Serilis {
 
     }
 
-    private void addcreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+    private void addcreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemInit.RAW_CHALCOPYRITE);
             event.accept(ItemInit.OAK_BOARD);
             event.accept(ItemInit.SPRUCE_BOARD);
@@ -59,19 +61,29 @@ public class Serilis {
             event.accept(ItemInit.PLANT_FIBER);
             event.accept(ItemInit.TWINE);
         }
-        if(event.getTab() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ItemInit.FLINT_FLAKE);
             event.accept(ItemInit.FLINT_AXE_HEAD);
             event.accept(ItemInit.FLINT_ARROWHEAD);
             event.accept(ItemInit.FLINT_KNIFE_HEAD);
             event.accept(ItemInit.FLINT_AXE);
         }
-        if(event.getTab() == CreativeModeTabs.COMBAT) {
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ItemInit.FLINT_SPEAR);
             event.accept(ItemInit.FLINT_KNIFE);
         }
-        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(BlockInit.CHALCOPYRITE_ORE);
+            event.accept(BlockInit.BAUXITE_ORE);
+            event.accept(BlockInit.DENSE_BAUXITE_ORE);
+            event.accept(BlockInit.ANTIMONY_ORE);
+            event.accept(BlockInit.BISMUTH_ORE);
+            event.accept(BlockInit.CHROMITE_ORE);
+            event.accept(BlockInit.COBALTITE_ORE);
+            event.accept(BlockInit.TIN_ORE); //
+            event.accept(BlockInit.MERCURY_ORE); //
+            event.accept(BlockInit.SILVER_ORE); //
+            event.accept(BlockInit.PLATINUM_ORE); //
             event.accept(BlockInit.SMALL_ROCK);
             event.accept(BlockInit.ROCK);
             event.accept(BlockInit.LARGE_ROCK);
@@ -89,7 +101,17 @@ public class Serilis {
             event.accept(BlockInit.CLAY_LOAM);
         }
 
-        if(event.getTab() == ModCreativeModeTabs.LIMINAL_SPACE_TAB) {
+        /*
+        if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
+            event.accept(BlockInit.CLAY_PIPE_BLOCK);
+        }
+         */
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(BlockInit.CLAY_FURNACE);
+        }
+
+        if(event.getTab() == ModCreativeModeTabs.LIMINAL_SPACE_TAB.get()) {
             event.accept(BlockInit.BACKROOMS_WALL1);
             event.accept(BlockInit.BACKROOMS_WALL2);
         }
@@ -99,7 +121,6 @@ public class Serilis {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
         }
     }
 

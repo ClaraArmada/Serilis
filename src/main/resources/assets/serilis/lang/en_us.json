@@ -23,6 +23,33 @@
 
   "item.serilis.raw_chalcopyrite": "Raw Chalcopyrite",
   "block.serilis.chalcopyrite_ore": "Chalcopyrite Ore",
+  "block.serilis.bauxite_ore": "Bauxite Ore",
+  "block.serilis.dense_bauxite_ore": "Dense Bauxite Ore",
+  "block.serilis.antimony_ore": "Antimony Ore",
+  "block.serilis.bismuth_ore": "Bismuth Ore",
+  "block.serilis.chromite_ore": "Chromite Ore",
+  "block.serilis.cobaltite_ore": "Cobaltite Ore",
+
+  "block.serilis.manganese_ore": "Manganese Ore",
+  "block.serilis.molybdenum_ore": "Molybdenum Ore",
+  "block.serilis.nickel_ore": "Nickel Ore",
+  "block.serilis.rhenium_ore": "Rhenium Ore",
+  "block.serilis.selenium_ore": "Selenium Ore",
+  "block.serilis.tantalum_ore": "Tantalum Ore",
+  "block.serilis.tellurium_ore": "Tellurium Ore",
+  "block.serilis.tin_ore": "Tin Ore",
+  "block.serilis.titanium_ore": "Titanium Ore",
+  "block.serilis.tungsten_ore": "Tungsten Ore",
+  "block.serilis.vanadium_ore": "Vanadium Ore",
+  "block.serilis.zinc_ore": "Zinc Ore",
+  "block.serilis.mercury_ore": "Mercury Ore",
+  "block.serilis.silver_ore": "Silver Ore",
+  "block.serilis.platinum_ore": "Platinum Ore",
+  "block.serilis.iridium_ore": "Iridium Ore",
+  "block.serilis.osmium_ore": "Osmium Ore",
+  "block.serilis.palladium_ore": "Palladium Ore",
+  "block.serilis.rhodium_ore": "Rhodium Ore",
+  "block.serilis.ruthenium_ore": "Ruthenium Ore",
 
   "block.serilis.rock": "Rock",
   "block.serilis.sandstone_rock": "Sandstone Rock",
@@ -40,6 +67,7 @@
   "block.serilis.silty_clay": "Silty Clay",
   "block.serilis.silty_clay_loam": "Silty Clay Loam",
   "block.serilis.clay_loam": "Clay Loam",
+
   "block.serilis.backrooms_wall1": "Backrooms Wall 1",
   "block.serilis.backrooms_wall2": "Backrooms Wall 2",
 
@@ -49,6 +77,15 @@
   "block.minecraft.deepslate_copper_ore": "Deepslate Native Copper Ore",
   "item.minecraft.raw_copper": "Raw Native Copper",
   "block.minecraft.raw_copper_block": "Block of Raw Native Copper",
+  "block.minecraft.gold_ore": "Native Gold Ore",
+  "block.minecraft.deepslate_gold_ore": "Deepslate Native Gold Ore",
+  "item.minecraft.raw_gold": "Raw Native Gold",
+  "block.minecraft.raw_gold_block": "Block of Raw Native Gold",
+  "block.minecraft.iron_ore": "Native Iron Ore",
+  "block.minecraft.deepslate_iron_ore": "Deepslate Native Iron Ore",
+  "item.minecraft.raw_iron": "Raw Native Iron",
+  "block.minecraft.raw_iron_block": "Block of Raw Native Iron",
+
 
   "creativemodetab.liminal_space_tab": "Liminal Spaces"
 }
