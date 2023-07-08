@@ -72,6 +72,11 @@
   "block.serilis.backrooms_wall2": "Backrooms Wall 2",
 
   "item.serilis.atomicsymbol.copper_iron_sulfide": "CuFeS₂",
+  "item.serilis.atomicsymbol.copper": "Cu",
+  "item.serilis.atomicsymbol.iron": "Fe",
+  "item.serilis.atomicsymbol.gold": "Au",
+  "item.serilis.atomicsymbol.kaolinite": "Al₂Si₂O₅(OH)₄",
+  "item.serilis.atomicsymbol.iron": "Fe",
 
   "block.minecraft.copper_ore": "Native Copper Ore",
   "block.minecraft.deepslate_copper_ore": "Deepslate Native Copper Ore",
