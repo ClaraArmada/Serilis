@@ -1,7 +1,6 @@
 package com.github.ClaraArmada.serilis.client.events;
 
 import com.github.ClaraArmada.serilis.Serilis;
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
