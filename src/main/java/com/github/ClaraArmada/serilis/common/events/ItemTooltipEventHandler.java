@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.client.events;
+package com.github.ClaraArmada.serilis.common.events;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import net.minecraft.network.chat.Component;

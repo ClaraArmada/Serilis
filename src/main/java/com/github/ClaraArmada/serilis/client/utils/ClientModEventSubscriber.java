@@ -1,4 +1,4 @@
-package com.github.ClaraArmada.serilis.client;
+package com.github.ClaraArmada.serilis.client.utils;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.client.renderer.entity.FlintSpearRenderer;
