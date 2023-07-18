@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "equipment",
+  "key": {
+    "#": {
+      "item": "serilis:flint_flake"
+    }
+  },
+  "pattern": [
+    " #",
+    "# "
+  ],
+  "result": {
+    "count": 1,
+    "item": "serilis:flint_knife_head"
+  }
+}
