@@ -4,7 +4,7 @@ import com.github.ClaraArmada.serilis.common.events.loot.ModLootModifiers;
 import com.github.ClaraArmada.serilis.init.BlockInit;
 import com.github.ClaraArmada.serilis.init.ItemInit;
 import com.github.ClaraArmada.serilis.init.ModCreativeModeTabs;
-import com.github.ClaraArmada.serilis.world.entity.ModEntityType;
+import com.github.ClaraArmada.serilis.init.EntityInit;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -32,7 +32,7 @@ public class Serilis {
 
         BlockInit.register(modEventBus);
 
-        ModEntityType.register(modEventBus);
+        EntityInit.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

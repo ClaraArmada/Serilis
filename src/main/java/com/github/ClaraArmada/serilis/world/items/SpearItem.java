@@ -1,6 +1,6 @@
 package com.github.ClaraArmada.serilis.world.items;
 
-import com.github.ClaraArmada.serilis.world.entity.projectile.ThrownFlintSpear;
+import com.github.ClaraArmada.serilis.world.entity.projectiles.ThrownFlintSpear;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.core.BlockPos;

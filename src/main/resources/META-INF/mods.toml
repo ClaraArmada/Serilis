@@ -5,7 +5,7 @@ license="MIT License"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 [[mods]]
 modId="serilis"
-version="0.1.0"
+version="0.1.2"
 displayName="Serilis"
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -13,7 +13,7 @@ displayName="Serilis"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="logo.png"
-credits="Dev and Artist: Claraisplaying, Localisation: Int22" #optional
+credits="Int22 for Russian  localisation" #optional
 authors="Claraisplaying"
 description='''
 Serilis is an ambitious tech and progression mod, starting from the stone age and possibly ending to the space age.
