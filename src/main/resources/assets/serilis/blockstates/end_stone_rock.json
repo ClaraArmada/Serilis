@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "serilis:block/end_stone_rock" },
+    "facing=east": { "model": "serilis:block/end_stone_rock", "y": 90 },
+    "facing=south": { "model": "serilis:block/end_stone_rock", "y": 180 },
+    "facing=west": { "model": "serilis:block/end_stone_rock", "y": 270 }
+  }
+}

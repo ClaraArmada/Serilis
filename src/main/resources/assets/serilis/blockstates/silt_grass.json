@@ -1,0 +1,25 @@
+
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "serilis:block/silt_grass"
+      },
+      {
+        "model": "serilis:block/silt_grass",
+        "y": 90
+      },
+      {
+        "model": "serilis:block/silt_grass",
+        "y": 180
+      },
+      {
+        "model": "serilis:block/silt_grass",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "serilis:block/silt_grass_snow"
+    }
+  }
+}

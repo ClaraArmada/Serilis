@@ -39,8 +39,8 @@ public class RockModel extends Block {
 
     @Nullable
     @Override
-    public BlockState getStateForPlacement(BlockPlaceContext pcontext) {
-        return this.defaultBlockState().setValue(FACING, pcontext.getHorizontalDirection().getOpposite());
+    public BlockState getStateForPlacement(BlockPlaceContext context) {
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
     @Override

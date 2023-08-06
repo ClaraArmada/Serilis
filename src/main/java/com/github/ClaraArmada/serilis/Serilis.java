@@ -1,10 +1,7 @@
 package com.github.ClaraArmada.serilis;
 
 import com.github.ClaraArmada.serilis.common.events.loot.ModLootModifiers;
-import com.github.ClaraArmada.serilis.init.BlockInit;
-import com.github.ClaraArmada.serilis.init.ItemInit;
-import com.github.ClaraArmada.serilis.init.ModCreativeModeTabs;
-import com.github.ClaraArmada.serilis.init.EntityInit;
+import com.github.ClaraArmada.serilis.init.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +30,8 @@ public class Serilis {
         BlockInit.register(modEventBus);
 
         EntityInit.register(modEventBus);
+
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -73,16 +72,17 @@ public class Serilis {
             event.accept(ItemInit.FLINT_KNIFE);
         }
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(BlockInit.CHALCOPYRITE_ORE);
+            event.accept(BlockInit.CHALCOLPYRITE_ORE);
+            event.accept(BlockInit.DEEPSLATE_CHALCOLPYRITE_ORE);
             event.accept(BlockInit.BAUXITE_ORE);
             event.accept(BlockInit.DENSE_BAUXITE_ORE);
             event.accept(BlockInit.ANTIMONY_ORE);
             event.accept(BlockInit.BISMUTH_ORE);
             event.accept(BlockInit.CHROMITE_ORE);
             event.accept(BlockInit.COBALTITE_ORE);
-            event.accept(BlockInit.TIN_ORE); //
-            event.accept(BlockInit.MERCURY_ORE); //
-            event.accept(BlockInit.SILVER_ORE); //
+            event.accept(BlockInit.CASSITERITE_ORE); //
+            event.accept(BlockInit.CINNABAR_ORE); //
+            event.accept(BlockInit.ARGENTITE_ORE); //
             event.accept(BlockInit.PLATINUM_ORE); //
             event.accept(BlockInit.SMALL_ROCK);
             event.accept(BlockInit.ROCK);
@@ -90,6 +90,22 @@ public class Serilis {
             event.accept(BlockInit.SMALL_SANDSTONE_ROCK);
             event.accept(BlockInit.SANDSTONE_ROCK);
             event.accept(BlockInit.LARGE_SANDSTONE_ROCK);
+            event.accept(BlockInit.SMALL_ANDESITE_ROCK);
+            event.accept(BlockInit.ANDESITE_ROCK);
+            event.accept(BlockInit.LARGE_ANDESITE_ROCK);
+            event.accept(BlockInit.SMALL_DIORITE_ROCK);
+            event.accept(BlockInit.DIORITE_ROCK);
+            event.accept(BlockInit.LARGE_DIORITE_ROCK);
+            event.accept(BlockInit.SMALL_GRANITE_ROCK);
+            event.accept(BlockInit.GRANITE_ROCK);
+            event.accept(BlockInit.LARGE_GRANITE_ROCK);
+            event.accept(BlockInit.SMALL_NETHERRACK_ROCK);
+            event.accept(BlockInit.NETHERRACK_ROCK);
+            event.accept(BlockInit.LARGE_NETHERRACK_ROCK);
+            event.accept(BlockInit.SMALL_END_STONE_ROCK);
+            event.accept(BlockInit.END_STONE_ROCK);
+            event.accept(BlockInit.LARGE_END_STONE_ROCK);
+
             event.accept(BlockInit.LOAM);
             event.accept(BlockInit.SILT);
             event.accept(BlockInit.SANDY_CLAY);
@@ -99,6 +115,26 @@ public class Serilis {
             event.accept(BlockInit.SILTY_CLAY);
             event.accept(BlockInit.SILTY_CLAY_LOAM);
             event.accept(BlockInit.CLAY_LOAM);
+            event.accept(BlockInit.LOAM_MUD);
+            event.accept(BlockInit.SILT_MUD);
+            event.accept(BlockInit.SANDY_CLAY_MUD);
+            event.accept(BlockInit.SANDY_CLAY_LOAM_MUD);
+            event.accept(BlockInit.SILT_LOAM_MUD);
+            event.accept(BlockInit.SANDY_LOAM_MUD);
+            event.accept(BlockInit.SILTY_CLAY_MUD);
+            event.accept(BlockInit.SILTY_CLAY_LOAM_MUD);
+            event.accept(BlockInit.CLAY_LOAM_MUD);
+            event.accept(BlockInit.DRY_QUICKSAND);
+            event.accept(BlockInit.LOAM_GRASS);
+            event.accept(BlockInit.SILT_GRASS);
+            event.accept(BlockInit.SANDY_CLAY_GRASS);
+            event.accept(BlockInit.SANDY_CLAY_LOAM_GRASS);
+            event.accept(BlockInit.SILT_LOAM_GRASS);
+            event.accept(BlockInit.SANDY_LOAM_GRASS);
+            event.accept(BlockInit.SILTY_CLAY_GRASS);
+            event.accept(BlockInit.SILTY_CLAY_LOAM_GRASS);
+            event.accept(BlockInit.CLAY_LOAM_GRASS);
+            event.accept(BlockInit.SAND_GRASS);
         }
 
         /*
@@ -108,7 +144,7 @@ public class Serilis {
          */
 
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
-            event.accept(BlockInit.CLAY_FURNACE);
+            event.accept(BlockInit.BASIC_BLOOMERY);
         }
 
         if(event.getTab() == ModCreativeModeTabs.LIMINAL_SPACE_TAB.get()) {

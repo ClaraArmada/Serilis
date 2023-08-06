@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "snowy=false": [
+      {
+        "model": "serilis:block/sandy_loam_grass"
+      },
+      {
+        "model": "serilis:block/sandy_loam_grass",
+        "y": 90
+      },
+      {
+        "model": "serilis:block/sandy_loam_grass",
+        "y": 180
+      },
+      {
+        "model": "serilis:block/sandy_loam_grass",
+        "y": 270
+      }
+    ],
+    "snowy=true": {
+      "model": "serilis:block/sandy_loam_grass_snow"
+    }
+  }
+}

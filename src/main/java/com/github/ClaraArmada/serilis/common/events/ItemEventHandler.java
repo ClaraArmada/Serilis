@@ -2,12 +2,16 @@ package com.github.ClaraArmada.serilis.common.events;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.init.ItemInit;
+import com.github.ClaraArmada.serilis.init.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -58,12 +62,10 @@ public final class ItemEventHandler {
                 int maxQuantity = 2;
                 int randomQuantity = random.nextInt(maxQuantity - minQuantity + 1) + minQuantity;
 
-                // Add the random quantity of FlintFlake items to the player's inventory
                 for (int i = 0; i < randomQuantity; i++) {
                     event.getEntity().getInventory().add(ItemInit.FLINT_FLAKE.get().getDefaultInstance());
                 }
 
-                // Replace the Flint item in the player's hand with the remaining stack, if any
                 ItemStack stack = event.getItemStack();
                 stack.shrink(randomQuantity);
                 if (stack.isEmpty()) {
@@ -71,6 +73,9 @@ public final class ItemEventHandler {
                 } else {
                     event.getEntity().setItemInHand(event.getHand(), stack);
                 }
+
+                Level world = event.getLevel();
+                world.playSound(null, blockPos, ModSounds.ROCKS_HITTING.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             }
         }
     }

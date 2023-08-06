@@ -1,3 +1,6 @@
 {
-  "parent": "serilis:block/large_sandstone_rock"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "serilis:item/large_sandstone_rock"
+  }
 }
