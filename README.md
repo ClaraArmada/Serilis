@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/ZhiiQSL.png" alt="Logo" width="7000"></p>
+<p align="center"><img src="https://i.imgur.com/d5VRpXR.png" alt="Logo" width="7000"></p>
 <h1 align="center">Serilis  <br>
 	<a href="https://github.com/ClaraArmada/Serilis/blob/master/LICENSE"><img src="https://img.shields.io/github/license/ClaraArmada/Serilis?style=flat-square" alt="License"></a>
     <br><br>
