@@ -15,9 +15,12 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB,
             Serilis.MODID);
 
-    public static RegistryObject<CreativeModeTab> LIMINAL_SPACE_TAB = CREATIVE_MODE_TABS.register("liminal_space_tab", () ->
+    public static RegistryObject<CreativeModeTab> SERILIS_LIMINAL_SPACE_TAB = CREATIVE_MODE_TABS.register("serilis_liminal_space_tab", () ->
             CreativeModeTab.builder().icon(() -> new ItemStack(BlockInit.BACKROOMS_WALL1.get()))
                     .title(Component.translatable("creativemodetab.liminal_space_tab")).build());
+    public static RegistryObject<CreativeModeTab> SERILIS_HOLIDAYS = CREATIVE_MODE_TABS.register("serilis_holidays", () ->
+            CreativeModeTab.builder().icon(() -> new ItemStack(BlockInit.LOOT_GIFT.get()))
+                    .title(Component.translatable("creativemodetab.holidays_tab")).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

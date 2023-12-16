@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X#V",
+    "XX*"
+  ],
+  "key": {
+    "#": {
+      "item": "serilis:small_fur"
+    },
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "*": {
+      "item": "serilis:plant_fiber"
+    },
+    "V": {
+      "item": "serilis:flint_flake"
+    }
+  },
+  "result": {
+    "item": "minecraft:acacia_planks"
+  }
+}

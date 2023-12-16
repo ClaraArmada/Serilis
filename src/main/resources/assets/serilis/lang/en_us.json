@@ -11,6 +11,11 @@
 
   "item.serilis.plant_fiber": "Plant Fiber",
   "item.serilis.twine": "Twine",
+  "item.serilis.branch": "Branch",
+  "item.serilis.daub": "Daub",
+  "item.serilis.animal_excrements": "Animal Excrements",
+  "item.serilis.mud_pile": "Mud Pile",
+  "item.serilis.small_fur": "Small Animal Fur",
 
   "item.serilis.flint_flake": "Flint Flake",
   "item.serilis.flint_spear": "Flint Spear",
@@ -20,6 +25,10 @@
   "item.serilis.flint_axe": "Flint Axe",
   "item.serilis.flint_arrowhead": "Flint Arrowhead",
   "item.serilis.flint_flake.tooltip": "Flint Flake",
+
+  "item.serilis.primitive_leggings": "Primitive Leggings",
+  "item.serilis.primitive_coat": "Primitive coat",
+  "item.serilis.primitive_boots": "Primitive Boots",
 
   "item.serilis.raw_chalcopyrite": "Raw Chalcopyrite",
   "block.serilis.chalcopyrite_ore": "Chalcopyrite Ore",
@@ -91,6 +100,7 @@
 
   "block.serilis.backrooms_wall1": "Backrooms Wall 1",
   "block.serilis.backrooms_wall2": "Backrooms Wall 2",
+  "block.serilis.poolroom_tiles": "Poolroom Tiles",
 
   "item.serilis.atomicsymbol.copper_iron_sulfide": "CuFeS₂",
   "item.serilis.atomicsymbol.copper": "Cu",
@@ -111,12 +121,18 @@
   "item.minecraft.raw_iron": "Raw Native Iron",
   "block.minecraft.raw_iron_block": "Block of Raw Native Iron",
 
+  "block.serilis.wooden_post": "wooden_post",
+  "block.serilis.wattle": "Wattle",
+  "block.serilis.wattle_and_daub": "Wattle and Daub",
+
   "block.serilis.basic_bloomery": "Basic Bloomery",
+  "block.serilis.loot_gift": "Loot Gift",
 
   "entity.serilis.flint_spear": "Thrown Flint Spear",
 
 
   "creativemodetab.liminal_space_tab": "Liminal Spaces",
+  "creativemodetab.holidays_tab": "Holidays",
 
 
   "sounds.serilis.rocks_hitting": "Rocks Hitting"

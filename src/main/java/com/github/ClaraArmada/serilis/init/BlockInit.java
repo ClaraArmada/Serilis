@@ -1,10 +1,7 @@
 package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
-import com.github.ClaraArmada.serilis.world.blocks.BasicBloomery;
-import com.github.ClaraArmada.serilis.world.blocks.LargeRockModel;
-import com.github.ClaraArmada.serilis.world.blocks.RockModel;
-import com.github.ClaraArmada.serilis.world.blocks.SmallRockModel;
+import com.github.ClaraArmada.serilis.world.blocks.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.EntityType;
@@ -14,6 +11,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -116,10 +115,23 @@ public class BlockInit {
             () -> new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK).mapColor(MapColor.GRASS).randomTicks().sound(SoundType.GRAVEL)));
 
 
+
+    public static final RegistryObject<Block> WOODEN_POST = registerBlock("wooden_post",
+            () -> new Post(BlockBehaviour.Properties.of().mapColor(Blocks.OAK_PLANKS.defaultMapColor()).forceSolidOn().strength(2.0F, 3.0F).ignitedByLava()));
+    public static final RegistryObject<Block> WATTLE = registerBlock("wattle",
+            () -> new Wattle(BlockBehaviour.Properties.of().mapColor(Blocks.OAK_PLANKS.defaultMapColor()).forceSolidOn().strength(2.0F, 3.0F).ignitedByLava().dynamicShape().noOcclusion()));
+    public static final RegistryObject<Block> WATTLE_AND_DAUB = registerBlock("wattle_and_daub",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(Blocks.SANDSTONE.defaultMapColor()).requiresCorrectToolForDrops().strength(0.8F)));
+
+
+
     public static final RegistryObject<Block> BACKROOMS_WALL1 = registerBlock("backrooms_wall1",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
     public static final RegistryObject<Block> BACKROOMS_WALL2 = registerBlock("backrooms_wall2",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
+    public static final RegistryObject<Block> POOLROOM_TILES = registerBlock("poolroom_tiles",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(-1.0F, 3600000.0F).sound(SoundType.STONE).noLootTable().isValidSpawn(BlockInit::never)));
 
@@ -198,6 +210,10 @@ public class BlockInit {
     public static final RegistryObject<Block> BASIC_BLOOMERY = registerBlock("basic_bloomery",
             () -> new BasicBloomery(BlockBehaviour.Properties.copy(Blocks.CLAY)
                     .strength(0.6f).sound(SoundType.STONE).dynamicShape().noOcclusion()));
+
+    public static final RegistryObject<Block> LOOT_GIFT = registerBlock("loot_gift",
+            () -> new SmallBox(BlockBehaviour.Properties.of()
+                    .strength(0.2f).dynamicShape().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

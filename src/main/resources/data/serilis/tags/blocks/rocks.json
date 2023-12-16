@@ -2,9 +2,6 @@
   "values": [
     "serilis:small_rock",
     "serilis:rock",
-    "serilis:large_rock",
-    "serilis:small_sandstone_rock",
-    "serilis:sandstone_rock",
-    "serilis:large_sandstone_rock"
+    "serilis:large_rock"
   ]
 }

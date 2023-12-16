@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/diorite",
-		"particle": "minecraft:block/diorite"
+		"0": "block/granite",
+		"particle": "minecraft:block/granite"
 	},
 	"elements": [
 		{

@@ -2,6 +2,7 @@ package com.github.ClaraArmada.serilis.init;
 
 import com.github.ClaraArmada.serilis.Serilis;
 import com.github.ClaraArmada.serilis.world.items.*;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.LeadItem;
@@ -52,6 +53,23 @@ public class ItemInit {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TWINE = ITEMS.register("twine",
             () -> new LeadItem(new Item.Properties()));
+    public static final RegistryObject<Item> BRANCH = ITEMS.register("branch",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DAUB = ITEMS.register("daub",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ANIMAL_EXCREMENTS = ITEMS.register("animal_excrements",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MUD_PILE = ITEMS.register("mud_pile",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SMALL_FUR = ITEMS.register("small_fur",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PRIMITIVE_COAT = ITEMS.register("primitive_coat",
+            () -> new ArmorItem(ModArmorMaterials.PRIMITIVE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> PRIMITIVE_BOOTS = ITEMS.register("primitive_boots",
+            () -> new ArmorItem(ModArmorMaterials.PRIMITIVE, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> PRIMITIVE_LEGGINGS = ITEMS.register("primitive_leggings",
+            () -> new ArmorItem(ModArmorMaterials.PRIMITIVE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

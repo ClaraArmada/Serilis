@@ -1,8 +1,10 @@
 package com.github.ClaraArmada.serilis.common.events;
 
 import com.github.ClaraArmada.serilis.Serilis;
+import com.github.ClaraArmada.serilis.init.BlockInit;
 import com.github.ClaraArmada.serilis.init.ItemInit;
 import com.github.ClaraArmada.serilis.init.ModSounds;
+import com.github.ClaraArmada.serilis.world.blocks.Wattle;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -12,6 +14,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -57,6 +61,7 @@ public final class ItemEventHandler {
         if (blockState.is(BlockTags.BASE_STONE_OVERWORLD)) {
             Item heldItem = event.getItemStack().getItem();
 
+            // FLINT KNAPPING
             if (heldItem == Items.FLINT) {
                 int minQuantity = 0;
                 int maxQuantity = 2;
@@ -78,5 +83,22 @@ public final class ItemEventHandler {
                 world.playSound(null, blockPos, ModSounds.ROCKS_HITTING.get(), SoundSource.BLOCKS, 1.0f, 1.0f);
             }
         }
+
+        // WATTLE AND DAUB
+        if (blockState.getBlock() == BlockInit.WATTLE.get()) {
+            Item heldItem = event.getItemStack().getItem();
+            Level world = event.getLevel();
+
+            if (heldItem == ItemInit.DAUB.get()) {
+                BlockState newBlockState = BlockInit.WATTLE_AND_DAUB.get().defaultBlockState();
+                world.setBlockAndUpdate(event.getPos(), newBlockState);
+                ItemStack stack = event.getItemStack();
+                stack.shrink(1);
+
+                world.playSound(null, blockPos, SoundEvents.MUD_PLACE, SoundSource.BLOCKS, 1.0f, 1.0f);
+            }
+        }
     }
+
+    //////////////////////////////////////
 }
