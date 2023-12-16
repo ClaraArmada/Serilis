@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/crimson_log"
+    "layer0": "serilis:item/animal_excrements"
   }
 }

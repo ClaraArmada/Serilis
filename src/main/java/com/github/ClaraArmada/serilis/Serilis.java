@@ -59,6 +59,10 @@ public class Serilis {
             event.accept(ItemInit.WARPED_BOARD);
             event.accept(ItemInit.PLANT_FIBER);
             event.accept(ItemInit.TWINE);
+            event.accept(ItemInit.BRANCH);
+            event.accept(ItemInit.DAUB);
+            event.accept(ItemInit.ANIMAL_EXCREMENTS);
+            event.accept(ItemInit.MUD_PILE);
         }
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ItemInit.FLINT_FLAKE);
@@ -138,10 +142,16 @@ public class Serilis {
         }
 
         /*
-        if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS) {
+        if(event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(BlockInit.CLAY_PIPE_BLOCK);
         }
          */
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(BlockInit.WOODEN_POST);
+            event.accept(BlockInit.WATTLE);
+            event.accept(BlockInit.WATTLE_AND_DAUB);
+        }
 
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
             event.accept(BlockInit.BASIC_BLOOMERY);
@@ -150,6 +160,10 @@ public class Serilis {
         if(event.getTab() == ModCreativeModeTabs.LIMINAL_SPACE_TAB.get()) {
             event.accept(BlockInit.BACKROOMS_WALL1);
             event.accept(BlockInit.BACKROOMS_WALL2);
+            event.accept(BlockInit.POOLROOM_TILES);
+        }
+        if(event.getTab() == ModCreativeModeTabs.HOLIDAYS.get()) {
+            event.accept(BlockInit.LOOT_GIFT);
         }
     }
 

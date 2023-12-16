@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "serilis:plant_fiber"
+    },
+    [
+      {
+        "item": "serilis:animal_excrements"
+      },
+      {
+        "item": "serilis:mud_pile"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "item": "serilis:daub"
+  }
+}

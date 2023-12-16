@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "serilis:block/wattle" },
+    "facing=east": { "model": "serilis:block/wattle", "y": 90 },
+    "facing=south": { "model": "serilis:block/wattle", "y": 180 },
+    "facing=west": { "model": "serilis:block/wattle", "y": 270 }
+  }
+}
