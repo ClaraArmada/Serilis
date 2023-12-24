@@ -5,7 +5,7 @@ license="MIT License"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 [[mods]]
 modId="serilis"
-version="0.2.1"
+version="0.3.0"
 displayName="Serilis"
 # A URL to query for updates for this mod. See the JSON update specification https://docs.minecraftforge.net/en/latest/misc/updatechecker/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
